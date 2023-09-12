@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txidkategori"
+        android:layout_width="54dp"
+        android:layout_height="65dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txnamakategori"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txidkategori"
+        app:layout_constraintTop_toTopOf="@+id/txidkategori" />
+
+    <TextView
+        android:id="@+id/txharga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/txidkategori"
+        app:layout_constraintEnd_toEndOf="@+id/txnamakategori"
+        app:layout_constraintStart_toEndOf="@+id/txidkategori"
+        app:layout_constraintTop_toBottomOf="@+id/txnamakategori" />
+</androidx.constraintlayout.widget.ConstraintLayout>
